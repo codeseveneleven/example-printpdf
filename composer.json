@@ -1,0 +1,6 @@
+{
+  "require": {
+    "vendor/example": "@dev",
+    "b13/host-variants": "^1.2"
+  }
+}

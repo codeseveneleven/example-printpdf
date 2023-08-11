@@ -1,0 +1,24 @@
+base: 'https://example-prodution.url/'
+baseVariants:
+  -
+    base: 'http://example-web/'
+    condition: 'applicationContext == "Development/ddev" && host == "example-web"'
+  -
+    base: 'https://example.ddev.site'
+    condition: 'applicationContext == "Development/ddev" && host == "example.ddev.site"'
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    languageId: 0
+    base: /
+    typo3Language: de
+    locale: de_DE.UTF-8
+    iso-639-1: de
+    navigationTitle: ''
+    hreflang: de-DE
+    direction: ltr
+    flag: de
+    websiteTitle: ''
+rootPageId: 1
+websiteTitle: ''

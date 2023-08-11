@@ -1,0 +1,15 @@
+services:
+  printpdf:
+    container_name: "ddev-${DDEV_SITENAME}-printpdf"
+    build:
+      context: ./printpdf/
+    hostname: ${DDEV_SITENAME}-printpdf
+    labels:
+      com.ddev.site-name: ${DDEV_SITENAME}
+      com.ddev.approot: ${DDEV_APPROOT}
+    expose:
+      - "80"
+    environment:
+      - VIRTUAL_HOST=$DDEV_HOSTNAME
+      - HTTP_EXPOSE=9198:80
+      - HTTPS_EXPOSE=9199:80
